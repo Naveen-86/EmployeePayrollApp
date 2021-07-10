@@ -3,8 +3,10 @@ body {
     height: 100%;
 }
 
+/* UC1 */
+
 .header {
-    padding: 15px;
+    padding: 15px 0;
     background-color: #fff;
 }
 
@@ -25,7 +27,7 @@ body {
 }
 
 .logo-content-img {
-    border: 0px solid #42515f;
+    border: solid 0px #42515f;
 }
 
 .emp-text {
@@ -44,6 +46,8 @@ body {
     box-sizing: border-box;
 }
 
+/* UC2 */
+
 .form-content {
     min-height: calc(100% - 80px);
     background-color: #f7f7f7;
@@ -56,20 +60,10 @@ body {
 .form {
     width: 65%;
     padding: 44px 60px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    background: #fff 0% 0% no-repeat padding-box;
     border: 1px solid #f5f5f5;
-    border-radius:  8px;
+    border-radius: 8px;
     opacity: 1;
-}
-
-.form-head {
-    font: normal normal bold 24px/37px Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    text-transform: capitalize;
-    opacity: 1;
-    padding: 20px;
 }
 
 .row-content {
@@ -86,6 +80,7 @@ body {
 
 label {
     padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
 .text {
@@ -105,10 +100,11 @@ label {
 
 .profile-radio-content {
     display: flex;
+    flex: 0 0 2vw;
     flex-direction: row;
 }
 
-.profile-radio-content > label {
+.profile-radio-content>label {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -133,7 +129,7 @@ select {
 
 .buttonParent {
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -144,17 +140,18 @@ select {
     letter-spacing: 0px;
     color: #42515f;
     opacity: 1;
-    background: #E2E2E2 0% 0% no-repeat padding-box;
+    background: transparent;
     border: none;
     font-weight: 400;
     min-width: 140px;
     padding: 7px 7px;
     border: 1px solid #707070;
     cursor: pointer;
-    border-radius: 3px;
 }
 
 .submitButton {
+    border: none;
+    background-color: #f5f5f5;
     margin-right: 30px;
 }
 
@@ -164,16 +161,15 @@ select {
 }
 
 error-output {
-    font-size: 12px;
+    font-size: 18px;
     color: red;
     margin-left: 10px;
-    font-style: italic;
 }
 
 @media only screen and (max-width: 960px) {
     .cancelButton {
         margin-left: 0px;
-    }    
+    }
     .form {
         width: 85%;
         padding: 44px 20px;
@@ -184,19 +180,15 @@ error-output {
     .form {
         margin-top: 10px;
     }
-    
     .row {
         flex-direction: column;
     }
-
     .uploadButton {
         justify-content: flex-start;
     }
-
     .profile-radio-button {
         flex-flow: wrap;
     }
-
     .submit-reset {
         width: 100%;
         display: flex;
@@ -205,11 +197,9 @@ error-output {
         justify-content: space-between;
         margin-bottom: 20px;
     }
-
     .submitButton {
         margin: 0;
     }
-
     .buttonParent {
         flex-direction: column-reverse;
         align-items: flex-start;
